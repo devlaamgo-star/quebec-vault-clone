@@ -1,4 +1,5 @@
 import { ArrowRight, Star } from 'lucide-react';
+import dashboardHero from '@/assets/dashboard-hero.png';
 
 const HeroSection = () => {
   return (
@@ -37,27 +38,14 @@ const HeroSection = () => {
           {/* Right Content - Dashboard Preview */}
           <div className="relative animate-fade-in" style={{ animationDelay: '0.3s' }}>
             <div className="relative">
-              {/* Laptop Frame */}
+              {/* Dashboard Image */}
               <div className="relative bg-card rounded-2xl p-3 shadow-2xl border border-border/50">
-                <div className="bg-secondary rounded-xl aspect-video flex items-center justify-center overflow-hidden">
-                  <div className="w-full h-full bg-gradient-to-br from-secondary to-muted p-6">
-                    {/* Fake Dashboard UI */}
-                    <div className="space-y-4">
-                      <div className="flex items-center gap-3">
-                        <div className="w-3 h-3 rounded-full bg-destructive"></div>
-                        <div className="w-3 h-3 rounded-full bg-gold"></div>
-                        <div className="w-3 h-3 rounded-full bg-accent"></div>
-                      </div>
-                      <div className="h-4 bg-muted rounded w-3/4"></div>
-                      <div className="h-4 bg-muted rounded w-1/2"></div>
-                      <div className="grid grid-cols-3 gap-3 mt-6">
-                        <div className="h-20 bg-muted rounded-lg"></div>
-                        <div className="h-20 bg-muted rounded-lg"></div>
-                        <div className="h-20 bg-muted rounded-lg"></div>
-                      </div>
-                      <div className="h-32 bg-muted rounded-lg mt-4"></div>
-                    </div>
-                  </div>
+                <div className="rounded-xl overflow-hidden">
+                  <img 
+                    src={dashboardHero} 
+                    alt="QuebecVault Dashboard - Interface de gestion des sauvegardes WordPress" 
+                    className="w-full h-auto rounded-lg"
+                  />
                 </div>
               </div>
               
